@@ -90,8 +90,8 @@ namespace UltimateQuadTree
 
         private bool IsObjectInMainRect(T obj)
         {
-            if (_objectBounds.GetTop(obj) > MainRect.Bottom) return false;
-            if (_objectBounds.GetBottom(obj) < MainRect.Top) return false;
+            if (_objectBounds.GetTop(obj) > MainRect.Top) return false;
+            if (_objectBounds.GetBottom(obj) < MainRect.Bottom) return false;
             if (_objectBounds.GetLeft(obj) > MainRect.Right) return false;
             if (_objectBounds.GetRight(obj) < MainRect.Left) return false;
 
